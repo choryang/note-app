@@ -12,14 +12,14 @@ const useItemStore = create<itemStore>((set, get) => ({
 
     items: [
     {
-        id: "asdfasdf",
+        id: "36b8f84d-df4e-4d49-b662-bcde71a8764f",
         title: "First memo",
         content: "First memo content",
         created_at: "2025-03-03 17:00:00",
         last_modified: "2025-03-03 17:00:00"
     },
     {
-        id: "asdfaedf",
+        id: "36b8f84d-df4e-4d49-b662-bcde71a8765e",
         title: "Second memo",
         content: "Second memo content",
         created_at: "2025-03-03 17:00:00",
