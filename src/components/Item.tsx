@@ -9,7 +9,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import { useNavigate } from 'react-router-dom';
 import item from '@/interfaces/item';
-import useModal from '@/utils/useModal';
+import useModal from '@/hooks/useModal';
 import Form from '@/components/Form';
 import form from '@/interfaces/form';
 import useItemStore from '@/store/itemStore';

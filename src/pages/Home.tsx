@@ -8,7 +8,7 @@ import AddIcon from '@mui/icons-material/Add';
 import { Divider } from '@mui/material';
 import useItemStore from '@/store/itemStore';
 import Form from '@/components/Form';
-import useModal from '@/utils/useModal';
+import useModal from '@/hooks/useModal';
 import form from '@/interfaces/form';
 
 

@@ -1,5 +1,5 @@
 import dialog from '@/interfaces/dialog';
-import useModal from '@/utils/useModal';
+import useModal from '@/hooks/useModal';
 import Button from '@mui/material/Button/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';

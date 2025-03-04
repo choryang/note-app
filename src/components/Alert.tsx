@@ -1,7 +1,7 @@
 import Alert from '@mui/material/Alert';
 import alert from '@/interfaces/alert';
 import Snackbar from '@mui/material/Snackbar/Snackbar';
-import useModal from '@/utils/useModal';
+import useModal from '@/hooks/useModal';
 
 function SimpleAlert(props: alert) {
 

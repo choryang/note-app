@@ -2,7 +2,7 @@ import form from "@/interfaces/form";
 import item from "@/interfaces/item";
 import useItemStore from "@/store/itemStore";
 import { korDate, timeFormatter } from "@/utils/time";
-import useModal from "@/utils/useModal";
+import useModal from "@/hooks/useModal";
 import Box from "@mui/material/Box/Box";
 import Button from "@mui/material/Button/Button";
 import TextField from "@mui/material/TextField/TextField";
