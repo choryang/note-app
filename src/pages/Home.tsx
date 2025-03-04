@@ -10,12 +10,21 @@ import useItemStore from '@/store/itemStore';
 import Form from '@/components/Form';
 import useModal from '@/hooks/useModal';
 import form from '@/interfaces/form';
+import { useEffect } from 'react';
 
 
 function Home () {
 
-    const { items } = useItemStore();
+    const { items, setItems } = useItemStore();
     const { showModal } = useModal();
+
+    useEffect(() => {
+        const data = localStorage.getItem("items");
+        if (data) {
+            const newItems = JSON.parse(data);
+            setItems(newItems);
+        }
+    }, [])
     
     const handleOpenAddModal = () => {
         showModal({
@@ -42,8 +51,9 @@ function Home () {
             </Box>
             <Divider sx={{mb: 4}}/>
             <Grid container spacing={2}>
+                {items.length < 1 && <Typography variant='body2'>Please Add Memo</Typography>}
                 {items.map((item) => {
-                    return <Item {...item} />
+                    return <Item {...item} key={item.id}/>
                 })}
             </Grid>
         </Container>

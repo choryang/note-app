@@ -4,7 +4,7 @@ interface item {
     title: string,
     content: string,
     created_at: string,
-    last_modified: string
+    last_modified: string,
 }
 
 export default item

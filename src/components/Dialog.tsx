@@ -28,7 +28,7 @@ function SimpleDialog(props: dialog) {
         </DialogContent>
         <DialogActions>
           <Button onClick={hideModal}>{props.cancel_text}</Button>
-          <Button onClick={props.action_func} autoFocus>
+          <Button variant="contained" onClick={props.action_func} autoFocus>
             {props.action_text}
           </Button>
         </DialogActions>

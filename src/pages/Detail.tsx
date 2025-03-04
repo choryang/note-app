@@ -33,7 +33,7 @@ function Detail () {
 
     return (
         <Container sx={{paddingTop: 10}}>  
-            <Typography variant="h3">
+            <Typography variant="h3" sx={{wordBreak: "break-all"}}>
                 {item.title}
             </Typography>
             <Typography variant="caption">

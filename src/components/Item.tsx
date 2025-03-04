@@ -68,9 +68,9 @@ function Item (props: item) {
     return (
         <Grid size={{ md: 6, sm: 12 }} sx={{width: "100%"}}>
              <Card sx={{display: "flex", flexDirection: "row", width: "100%"}}>
-                <CardActionArea onClick={handleClickDetail}>
+                <CardActionArea onClick={handleClickDetail} sx={{width: "calc(100% - 82px)"}}>
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
+                        <Typography gutterBottom variant="h5" component="div" noWrap>
                             {props.title}
                         </Typography>
                         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
