@@ -31,9 +31,9 @@ function Home () {
     
 
     return (
-        <Container sx={{paddingTop: 10}}>
+        <Container sx={{paddingTop: { sm: 10, xs: 5 }}}>
             <Box sx={{display: "flex", justifyContent: "space-between", alignItems: "center", mb: 2}}>
-                <Typography variant="h3">
+                <Typography sx={{ typography: { sm: 'h4', xs: 'h5' } }}>
                     Memo List
                 </Typography>
                 <Button variant="outlined" startIcon={<AddIcon />} onClick={handleOpenAddModal}>

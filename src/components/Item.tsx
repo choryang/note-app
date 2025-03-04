@@ -66,7 +66,7 @@ function Item (props: item) {
     }
 
     return (
-        <Grid size={{sm: 12, md: 6}} sx={{width: "100%"}}>
+        <Grid size={{ md: 6, sm: 12 }} sx={{width: "100%"}}>
              <Card sx={{display: "flex", flexDirection: "row", width: "100%"}}>
                 <CardActionArea onClick={handleClickDetail}>
                     <CardContent>

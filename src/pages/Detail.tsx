@@ -16,13 +16,13 @@ function Detail () {
     useEffect(() => {
         
         if (params.id === undefined) { 
-            navigate("/"); 
+            navigate("/", {replace: true}); 
             return;
         }
 
         const currentItem = getItem(params.id);
         if (currentItem === undefined) {
-            navigate("/"); 
+            navigate("/", {replace: true}); 
             return;
         }
 
