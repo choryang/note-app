@@ -15,14 +15,12 @@ function SimpleDialog(props: dialog) {
     return (
         <Dialog
         open={true}
-        aria-labelledby="alert-dialog-title"
-        aria-describedby="alert-dialog-description"
       >
-        <DialogTitle id="alert-dialog-title">
+        <DialogTitle>
           {props.title}
         </DialogTitle>
         <DialogContent>
-          <DialogContentText id="alert-dialog-description">
+          <DialogContentText>
             {props.content}
           </DialogContentText>
         </DialogContent>
