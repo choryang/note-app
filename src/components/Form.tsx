@@ -12,8 +12,9 @@ import { useForm } from "react-hook-form";
 function Form(props: form) {
 
     const { register, handleSubmit, getValues, formState: {errors}} = useForm();
-    const { items, setItems } = useItemStore();
+    const { items, deleteItem, setItems } = useItemStore();
     const { hideModal, showModal } = useModal();
+    // 생성과 수정 모두 동일한 form을 사용하므로 어떤 액션인지 구분하기 위한 타입
     type ActionTypes = "Addition" | "Update";
 
     const defaultValue = props.default_value;
@@ -44,7 +45,7 @@ function Form(props: form) {
         let action: ActionTypes = "Addition";
 
         if(Object.keys(defaultValue).length > 0) {
-            newItems = items.filter(item => item.id !== defaultValue.id);
+            newItems = deleteItem(defaultValue.id);
             action = "Update";
         } else {
             newItems = [...items];
@@ -57,9 +58,11 @@ function Form(props: form) {
     }
 
     const handleCancel = () => {
+        // form 컴포넌트가 모달 내에서 사용되었을 때
         if(props.is_modal) {
             hideModal();
         }
+        // form 컴포넌트가 페이지에서 사용되었다면?
     }
 
     return (
