@@ -1,5 +1,5 @@
 # 기술 스택
-- 라이브러리: React
+- 프론트엔드 라이브러리: React
 - UI 라이브러리: MUI
 - 상태 관리 라이브러리: Zustand
 
@@ -10,7 +10,7 @@ https://note-app-ebon-xi.vercel.app/
 
 # 설치 및 실행 방법
 ```
-    git clone
+    git clone https://github.com/choryang/note-app.git
     cd note-app
     npm install
     npm run dev
